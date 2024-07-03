@@ -2,10 +2,17 @@
 
 @section('content')
 <section class="container">
+    <ul>
 
-    
+        @foreach ($dato as $index => $item)
+        <li>
+           {{$index + 1}} elemento della tabella : <br> {{ $item }} 
+        </li>
+            
         
-            {{ $dato }}
+        @endforeach
+    </ul>
+        
         
         
    
